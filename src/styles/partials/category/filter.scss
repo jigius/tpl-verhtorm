@@ -1,0 +1,17 @@
+.slider {
+  height: 10px;
+  margin: 4px 8px 14px 8px;
+}
+.slider .noUi-connect {
+  background: #48CFAD;
+}
+.slider .noUi-handle {
+  height: 18px;
+  width: 18px;
+  top: -5px;
+  right: -9px; /* half the width */
+  border-radius: 9px;
+}
+.slider .noUi-handle:before, .slider .noUi-handle:after {
+  display: none;
+}

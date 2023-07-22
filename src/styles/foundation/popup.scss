@@ -1,0 +1,30 @@
+/**
+ * Styles for the outputting of popup messages (with help of Fancybox)
+ */
+.popup-msg {
+  .content {
+    width: 300px;
+    display: block;
+    overflow: hidden;
+    padding: 15px;
+    border-radius: 6px;
+  }
+  .title {
+    font: 400 1.8em/2.2em "Roboto Slab", Serif;
+  }
+  .message {
+    font: 400 1.4em/2.2em "Roboto Slab", Serif;
+  }
+  .content {
+    background: #e5f6fb;
+    &.content_error {
+      background: #f5cdca;
+    }
+    &.content_warning {
+      background: #f5e3cc;
+    }
+    &.content_info {
+      background: #dff5d1;
+    }
+  }
+}

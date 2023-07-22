@@ -1,0 +1,12 @@
+<svg id="бургер" xmlns="http://www.w3.org/2000/svg" width="14.125" height="14.125" viewBox="0 0 14.125 14.125">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #fff;
+        fill-rule: evenodd;
+      }
+    </style>
+  </defs>
+  <path id="Прямоугольник_4_копия" data-name="Прямоугольник 4 копия" class="cls-1" d="M288.929,22.657L301.657,9.929l1.414,1.414L290.343,24.071Z" transform="translate(-288.938 -9.938)"/>
+  <path id="Прямоугольник_4_копия_2" data-name="Прямоугольник 4 копия 2" class="cls-1" d="M288.929,11.343l1.414-1.414,12.728,12.728-1.414,1.414Z" transform="translate(-288.938 -9.938)"/>
+</svg>

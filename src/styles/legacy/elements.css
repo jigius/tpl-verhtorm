@@ -1,0 +1,60 @@
+@charset "utf-8";
+/* CSS Document */
+html {}
+body {
+	font-size: 62.5%;
+	font-family: Arial, Helvetica, sans-serif;
+	line-height: 1.8em;
+	text-align: center;
+	background: #FFF;
+}
+
+/* Headings */
+h1,h1,h3,h4{}
+h1 {
+	color: #464637;
+	font: 400 3.6em/1.1em 'Roboto Slab', serif;
+	margin-bottom: 22px;
+}
+h2 {}
+#content_main h2{}
+#content_main h2 a{}
+
+h3 {}
+/* Basic elements */
+p {}
+address {}
+address a {}
+address a:hover {}
+blockquote {}
+img {}
+strong ,#content_main .attention{
+	font-weight: 400;
+}
+
+/* Links */
+a {
+}
+a:visited {
+}
+a:hover {
+}
+dl {}
+dt {}
+dd {}
+
+/* Table */
+table {}
+caption {}
+tbody {}
+tfoot {}
+thead {}
+tr {}
+th {}
+td {}
+
+/* Form */
+form {}
+fieldset {}
+label {}
+legend{}
