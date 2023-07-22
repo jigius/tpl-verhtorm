@@ -31,10 +31,14 @@
 #### Референсы
 1. Общий вид фильтра и его блоков - [тут](https://umitoy.ru/toys/creativity/materialy-dlya-tvorchestva/materialy/tsvetnaya-bumaga/?set_filter=y&f_124_2755625286=Y&f_124_2786819421=Y&f_124_3010671297=Y&f_124_2768808424=Y&f_124_1530721764=Y&f_124_2628388234=Y&f_124_4172862750=Y). Взять нужно только три блока: Цена, Бренд, Возраст.
 2. Общий вид адаптированного фильтра (media only screen and (min-width: 688px) and (max-width: 989px))  
+---
 
 ![тут](mob-cat-fltr-collapsed.jpg)
+---
 
 ![тут](mob-cat-fltr-expanded.jpg)
+
+
 3. Общий вид адаптированного фильтра 
 ![тут](cat-fltr-dktp.jpg)
 
