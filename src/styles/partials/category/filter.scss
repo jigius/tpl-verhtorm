@@ -3,7 +3,7 @@
   margin: 4px 8px 14px 8px;
 }
 .slider .noUi-connect {
-  background: #48CFAD;
+  background: #48cfad;
 }
 .slider .noUi-handle {
   height: 18px;
@@ -12,6 +12,121 @@
   right: -9px; /* half the width */
   border-radius: 9px;
 }
-.slider .noUi-handle:before, .slider .noUi-handle:after {
+.slider .noUi-handle:before,
+.slider .noUi-handle:after {
   display: none;
+}
+
+.tf-filter {
+  background-color: #e6e9ed;
+}
+
+.tf-filter-group {
+  border-bottom: 1px solid #fff;
+}
+
+.panel {
+  padding: 15px 20px;
+}
+
+.panel-body {
+  margin-bottom: 10px;
+}
+
+.panel-body__item {
+  position: relative;
+  margin-bottom: 8px;
+}
+
+.panel-price-input {
+  display: block;
+  width: 100%;
+  border: 1px solid #ccd1d9;
+  padding: 10px 5px;
+  margin: 0 0 5px;
+  color: #434a54;
+  line-height: 16px;
+  transition: all 0.1s ease;
+  box-sizing: border-box;
+  border-radius: 3px;
+  box-shadow: 0 0 7px #e6e9ed inset;
+}
+
+.panel-price-inputs {
+  display: flex;
+}
+
+.panel-price-input__item:not(:last-child) {
+  margin-right: 10px;
+}
+
+.panel-title {
+  font-weight: bold;
+  font-size: 15px;
+  margin-bottom: 15px;
+}
+
+.show-all {
+  width: 150px;
+  margin: 10px 0 0;
+  padding: 0 15px;
+  background-color: #aab2bd;
+  color: #fff;
+  font-size: 13px;
+  line-height: 32px;
+  vertical-align: top;
+  cursor: pointer;
+  border-radius: 3px;
+  transition: all 0.1s ease;
+
+  // &::after {
+  //   content: "";
+  //   display: block;
+  //   width: 22px;
+  //   height: 32px;
+  // }
+}
+
+.check-input {
+  display: none;
+}
+
+.panel-label {
+  padding: 0 0 0 28px;
+  font-size: 15px;
+  line-height: 20px;
+  color: #434a54;
+  cursor: pointer;
+
+  &::before {
+    content: "";
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 15px;
+    width: 15px;
+    border: 1px solid #aab2bd;
+    background-color: #fff;
+    box-sizing: border-box;
+    border-radius: 2px;
+    transition: all 0.1s ease;
+  }
+
+  &::after {
+    content: "";
+    opacity: 0;
+    visibility: hidden;
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    height: 5px;
+    width: 9px;
+    border-color: #fff;
+    border-image: none;
+    border-style: solid;
+    border-width: 0 0 2px 2px;
+    transform: rotate(-45deg);
+    transition: all 0.1s ease;
+  }
 }
