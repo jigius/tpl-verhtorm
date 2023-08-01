@@ -1,320 +1,252 @@
-
 <!-- category/filter.html start -->
-<div class="tf-filter main-container">
-  <div class="catalog-filter-btn">
-    <button class="btn catalog-btn" type="button" data-label="Скрыть фильтр" data-toggle="collapse"
-            data-target="#filter" aria-expanded="false" aria-controls="filter">
-      Фильтр
+<div class="catalog-filter__block">
+  <div class="catalog-filter-btn catalog-filter-btn--show">
+    <button class="btn catalog-btn catalog-btn--show" type="button" data-label="Скрыть фильтр" data-toggle="collapse"
+      data-target="#filter" aria-expanded="false" aria-controls="filter">
     </button>
+    <div class="catalog-clear">
+      <a class="catalog-clear-all tf-filter-reset hide" href="javascript:void(0);" data-tf-reset="all">Очистить все</a>
+    </div>
   </div>
-  <div class="collapse catalog-collapse" id="filter">
-    <div class="panel-group">
-      <div class="catalog-clear">
-        <a class="catalog-clear-all tf-filter-reset hide"
-           href="javascript:void(0);"
-           data-tf-reset="all"
-        >Очистить все</a>
-      </div>
-      <div class="panel panel-default tf-filter-group">
+</div>
+<div class="tf-filter tf-filter main-container">
+  <div class="collapse catalog-collapse" id="filter2">
+    <ol class="panel-group">
+      <li class="panel panel-default tf-filter-group">
         <div class="panel-heading">
           <h4 class="panel-title">
-            <a class="" data-toggle="collapse"
-               href="#tf-filter-panel0"
-               role="button"
-               aria-expanded="true"
-               aria-controls="tf-filter-panel0"
-            >
+            <a class="panel-head" data-toggle="collapse" href="#tf-filter2-panel0" role="button" aria-expanded="true"
+              aria-controls="tf-filter-panel1">
               Цена, ₽
               <span class="panel-arrow"></span>
             </a>
           </h4>
         </div>
-        <div class="panel-collapse collapse in"
-             id="tf-filter-panel0"
-             aria-expanded="true"
-             data-o-expanded="true"
-        >
+        <div class="panel-collapse collapse in" id="tf-filter2-panel0" aria-expanded="true" data-o-expanded="true">
           <div class="panel-body panel-price-slider">
             <div class="slider" id="slider"></div>
-            <div class="panel-price-inputs">
-              <label class="panel-price-label">
-                <input id="range_start" class="panel-price-input" type="text"
-                       name="tf_fp[min]"
-                       min="105"
-                       max="16919"
-                       value="105"
-                       data-raw-value="105"
-                       placeholder=""
-                >
-              </label>
-              <label class="panel-price-label">
-                <input id="range_finish" class="panel-price-input" type="text"
-                       name="tf_fp[max]"
-                       min="106"
-                       max="16920"
-                       value="16920"
-                       data-raw-value="16920"
-                       placeholder=""
-                >
-              </label>
-            </div>
+            <ul class="panel-price-inputs">
+              <li class="panel-price-input__item">
+                <label class="panel-price-label">
+                  <input id="range_start2" class="panel-price-input" type="text" name="tf_fp[min]" min="105" max="16919"
+                    value="105" data-raw-value="105" placeholder="">
+                </label>
+              </li>
+              <li class="panel-price-input__item">
+                <label class="panel-price-label">
+                  <input id="range_finish2" class="panel-price-input" type="text" name="tf_fp[max]" min="106"
+                    max="16920" value="16920" data-raw-value="16920" placeholder="">
+                </label>
+              </li>
+            </ul>
           </div>
         </div>
-      </div>
-      <div class="panel panel-default tf-filter-group">
+      </li>
+      <li class="panel panel-default tf-filter-group">
         <div class="panel-heading">
           <h4 class="panel-title">
-            <a class="" data-toggle="collapse"
-               href="#tf-filter-panel1"
-               role="button"
-               aria-expanded="true"
-               aria-controls="tf-filter-panel1"
-            >
+            <a class="panel-head" data-toggle="collapse" href="#tf-filter2-panel1" role="button" aria-expanded="true"
+              aria-controls="tf-filter2-panel1">
               Бренд
               <span class="panel-arrow"></span>
             </a>
           </h4>
         </div>
-        <div class="panel-collapse collapse in"
-             id="tf-filter-panel1"
-             aria-expanded="true"
-             data-o-expanded="true"
-        >
-          <div class="panel-body">
-            <label class="check panel-label panel-label">
-              <input class="check-input check-input__all-variants panel-checkbox" type="checkbox"
-                     checked
-              />
-              <span class="check-box"></span>
-              Все варианты
-            </label>
-            <label class="check panel-label">
-              <input class="check-input panel-checkbox" type="checkbox"
-                     name="tf_fm"
-                     value="1062"
-              />
-              <span class="check-box"></span>
-              Tooky Toy
-              (31)
-            </label>
-            <label class="check panel-label">
-              <input class="check-input panel-checkbox" type="checkbox"
-                     name="tf_fm"
-                     value="957"
-              />
-              <span class="check-box"></span>
-              Mary Poppins
-              (25)
-            </label>
-            <label class="check panel-label">
-              <input class="check-input panel-checkbox" type="checkbox"
-                     name="tf_fm"
-                     value="1076"
-              />
-              <span class="check-box"></span>
-              Hape
-              (18)
-            </label>
-            <label class="check panel-label">
-              <input class="check-input panel-checkbox" type="checkbox"
-                     name="tf_fm"
-                     value="913"
-              />
-              <span class="check-box"></span>
-              SmileDecor
-              (11)
-            </label>
-            <label class="check panel-label">
-              <input class="check-input panel-checkbox" type="checkbox"
-                     name="tf_fm"
-                     value="904"
-              />
-              <span class="check-box"></span>
-              Нескучные игры
-              (9)
-            </label>
-            <label class="check panel-label">
-              <input class="check-input panel-checkbox" type="checkbox"
-                     name="tf_fm"
-                     value="909"
-              />
-              <span class="check-box"></span>
-              Bondibon
-              (9)
-            </label>
-            <label class="check panel-label">
-              <input class="check-input panel-checkbox" type="checkbox"
-                     name="tf_fm"
-                     value="918"
-              />
-              <span class="check-box"></span>
-              Djeco
-              (8)
-            </label>
-            <label class="check panel-label">
-              <input class="check-input panel-checkbox" type="checkbox"
-                     name="tf_fm"
-                     value="1055"
-              />
-              <span class="check-box"></span>
-              Весна-Дизайн
-              (7)
-            </label>
-            <label class="check panel-label">
-              <input class="check-input panel-checkbox" type="checkbox"
-                     name="tf_fm"
-                     value="938"
-              />
-              <span class="check-box"></span>
-              Десятое королевство
-              (6)
-            </label>
-            <label class="check panel-label">
-              <input class="check-input panel-checkbox" type="checkbox"
-                     name="tf_fm"
-                     value="1014"
-
-
-              />
-              <span class="check-box"></span>
-              Полесье
-              (5)
-            </label>
-            <label class="check panel-label">
-              <input class="check-input panel-checkbox" type="checkbox"
-                     name="tf_fm"
-                     value="1053"
-
-
-              />
-              <span class="check-box"></span>
-              Огонек
-              (5)
-            </label>
-          </div>
+        <div class="panel-collapse collapse in" id="tf-filter2-panel1" aria-expanded="true" data-o-expanded="true">
+          <ul class="panel-body">
+            <li class="panel-body__item">
+              <label class="check panel-label panel-label">
+                <input class="check-input check-input__all-variants panel-checkbox" type="checkbox" checked />
+                <span class="check-box"></span>
+                Все варианты
+              </label>
+            </li>
+            <li class="panel-body__item">
+              <label class="check panel-label">
+                <input class="check-input panel-checkbox" type="checkbox" name="tf_fm" value="1062" />
+                <span class="check-box"></span>
+                Tooky Toy
+                (31)
+              </label>
+            </li>
+            <li class="panel-body__item">
+              <label class="check panel-label">
+                <input class="check-input panel-checkbox" type="checkbox" name="tf_fm" value="957" />
+                <span class="check-box"></span>
+                Mary Poppins
+                (25)
+              </label>
+            </li>
+            <li class="panel-body__item">
+              <label class="check panel-label">
+                <input class="check-input panel-checkbox" type="checkbox" name="tf_fm" value="1076" />
+                <span class="check-box"></span>
+                Hape
+                (18)
+              </label>
+            </li>
+            <li class="panel-body__item">
+              <label class="check panel-label">
+                <input class="check-input panel-checkbox" type="checkbox" name="tf_fm" value="913" />
+                <span class="check-box"></span>
+                SmileDecor
+                (11)
+              </label>
+            </li>
+            <li class="panel-body__item">
+              <label class="check panel-label">
+                <input class="check-input panel-checkbox" type="checkbox" name="tf_fm" value="904" />
+                <span class="check-box"></span>
+                Нескучные игры
+                (9)
+              </label>
+            </li>
+            <li class="panel-body__item">
+              <label class="check panel-label">
+                <input class="check-input panel-checkbox" type="checkbox" name="tf_fm" value="909" />
+                <span class="check-box"></span>
+                Bondibon
+                (9)
+              </label>
+            </li>
+            <li class="panel-body__item">
+              <label class="check panel-label">
+                <input class="check-input panel-checkbox" type="checkbox" name="tf_fm" value="918" />
+                <span class="check-box"></span>
+                Djeco
+                (8)
+              </label>
+            </li>
+            <li class="panel-body__item">
+              <label class="check panel-label">
+                <input class="check-input panel-checkbox" type="checkbox" name="tf_fm" value="1055" />
+                <span class="check-box"></span>
+                Весна-Дизайн
+                (7)
+              </label>
+            </li>
+            <li class="panel-body__item">
+              <label class="check panel-label">
+                <input class="check-input panel-checkbox" type="checkbox" name="tf_fm" value="938" />
+                <span class="check-box"></span>
+                Десятое королевство
+                (6)
+              </label>
+            </li>
+            <li class="panel-body__item">
+              <label class="check panel-label">
+                <input class="check-input panel-checkbox" type="checkbox" name="tf_fm" value="1014" />
+                <span class="check-box"></span>
+                Полесье
+                (5)
+              </label>
+            </li>
+            <li class="panel-body__item">
+              <label class="check panel-label">
+                <input class="check-input panel-checkbox" type="checkbox" name="tf_fm" value="1053" />
+                <span class="check-box"></span>
+                Огонек
+                (5)
+              </label>
+            </li>
+          </ul>
+          <div class="show-all">Показать ещё XX</div>
         </div>
-      </div>
-      <div class="panel panel-default tf-filter-group">
+      </li>
+      <li class="panel panel-default tf-filter-group">
         <div class="panel-heading">
           <h4 class="panel-title">
-            <a class="collapsed" data-toggle="collapse"
-               href="#tf-filter-panel2"
-               role="button"
-               aria-expanded="false"
-               aria-controls="tf-filter-panel2"
-            >
+            <a class="panel-head collapsed" data-toggle="collapse" href="#tf-filter2-panel2" role="button"
+              aria-expanded="false" aria-controls="tf-filter2-panel2">
               Возраст
               <span class="panel-arrow"></span>
             </a>
           </h4>
         </div>
-        <div class="panel-collapse collapse"
-             id="tf-filter-panel2"
-             aria-expanded="false"
-             data-o-expanded="false"
-        >
-          <div class="panel-body">
-            <label class="check panel-label">
-              <input class="check-input check-input__all-variants panel-checkbox" type="checkbox"
-                     checked
-              />
-              <span class="check-box"></span>
-              Все варианты
-            </label>
-            <label class="check panel-label">
-              <input class="check-input panel-checkbox" type="checkbox"
-                     name="tf_ff"
-                     value="62"
-              />
-              <span class="check-box"></span>
-              с рождения
-              (3)
-            </label>
-            <label class="check panel-label">
-              <input class="check-input panel-checkbox" type="checkbox"
-                     name="tf_ff"
-                     value="57"
-              />
-              <span class="check-box"></span>
-              с 6 месяцев
-              (3)
-            </label>
-            <label class="check panel-label">
-              <input class="check-input panel-checkbox" type="checkbox"
-                     name="tf_ff"
-                     value="59"
-              />
-              <span class="check-box"></span>
-              с 1 года
-              (8)
-            </label>
-            <label class="check panel-label">
-              <input class="check-input panel-checkbox" type="checkbox"
-                     name="tf_ff"
-                     value="65"
-              />
-              <span class="check-box"></span>
-              с 2-х лет
-              (26)
-            </label>
-            <label class="check panel-label">
-              <input class="check-input panel-checkbox" type="checkbox"
-                     name="tf_ff"
-                     value="60"
-              />
-              <span class="check-box"></span>
-              с 3-х лет
-              (124)
-            </label>
-            <label class="check panel-label">
-              <input class="check-input panel-checkbox" type="checkbox"
-                     name="tf_ff"
-                     value="55"
-              />
-              <span class="check-box"></span>
-              с 4-х лет
-              (2)
-            </label>
-            <label class="check panel-label">
-              <input class="check-input panel-checkbox" type="checkbox"
-                     name="tf_ff"
-                     value="58"
-              />
-              <span class="check-box"></span>
-              с 5-ти лет
-              (2)
-            </label>
-            <label class="check panel-label">
-              <input class="check-input panel-checkbox" type="checkbox"
-                     name="tf_ff"
-                     value="56"
-              />
-              <span class="check-box"></span>
-              с 6-ти лет
-              (1)
-            </label>
-            <label class="check panel-label">
-              <input class="check-input panel-checkbox" type="checkbox"
-                     name="tf_ff"
-                     value="63"
-              />
-              <span class="check-box"></span>
-              с 7-ми лет
-              (3)
-            </label>
-            <label class="check panel-label">
-              <input class="check-input panel-checkbox" type="checkbox"
-                     name="tf_ff"
-                     value="54"
-              />
-              <span class="check-box"></span>
-              с 10-ти лет
-              (2)
-            </label>
-          </div>
+        <div class="panel-collapse collapse" id="tf-filter2-panel2" aria-expanded="false" data-o-expanded="false">
+          <ul class="panel-body panel-body--age">
+            <li class="panel-body__item">
+              <label class="check panel-label">
+                <input class="check-input check-input__all-variants panel-checkbox" type="checkbox" checked />
+                <span class="check-box"></span>
+                Все варианты
+              </label>
+            </li>
+            <li class="panel-body__item">
+              <label class="check panel-label">
+                <input class="check-input panel-checkbox" type="checkbox" name="tf_ff" value="62" />
+                <span class="check-box"></span>
+                0 мес
+              </label>
+            </li>
+            <li class="panel-body__item">
+              <label class="check panel-label">
+                <input class="check-input panel-checkbox" type="checkbox" name="tf_ff" value="57" />
+                <span class="check-box"></span>
+                6 мес
+              </label>
+            </li>
+            <li class="panel-body__item">
+              <label class="check panel-label">
+                <input class="check-input panel-checkbox" type="checkbox" name="tf_ff" value="59" />
+                <span class="check-box"></span>
+                1 год
+              </label>
+            </li>
+            <li class="panel-body__item">
+              <label class="check panel-label">
+                <input class="check-input panel-checkbox" type="checkbox" name="tf_ff" value="65" />
+                <span class="check-box"></span>
+                2 года
+              </label>
+            </li>
+            <li class="panel-body__item">
+              <label class="check panel-label">
+                <input class="check-input panel-checkbox" type="checkbox" name="tf_ff" value="60" />
+                <span class="check-box"></span>
+                3 года
+              </label>
+            </li>
+            <li class="panel-body__item">
+              <label class="check panel-label">
+                <input class="check-input panel-checkbox" type="checkbox" name="tf_ff" value="55" />
+                <span class="check-box"></span>
+                4 года
+              </label>
+            </li>
+            <li class="panel-body__item">
+              <label class="check panel-label">
+                <input class="check-input panel-checkbox" type="checkbox" name="tf_ff" value="58" />
+                <span class="check-box"></span>
+                5 лет
+              </label>
+            </li>
+            <li class="panel-body__item">
+              <label class="check panel-label">
+                <input class="check-input panel-checkbox" type="checkbox" name="tf_ff" value="56" />
+                <span class="check-box"></span>
+                6 лет
+              </label>
+            </li>
+            <li class="panel-body__item">
+              <label class="check panel-label">
+                <input class="check-input panel-checkbox" type="checkbox" name="tf_ff" value="63" />
+                <span class="check-box"></span>
+                7 лет
+              </label>
+            </li>
+            <li class="panel-body__item">
+              <label class="check panel-label">
+                <input class="check-input panel-checkbox" type="checkbox" name="tf_ff" value="54" />
+                <span class="check-box"></span>
+                10 лет
+              </label>
+            </li>
+          </ul>
+          <div class="show-all">Показать ещё XX</div>
         </div>
-      </div>
-    </div>
+      </li>
+    </ol>
   </div>
 </div>
 <!-- category/filter.html finish -->
