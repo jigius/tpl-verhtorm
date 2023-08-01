@@ -63,7 +63,7 @@
 }
 
 .panel-head {
-  color: #434a54 !important;
+  color: #464637 !important;
   text-decoration: unset;
 }
 
@@ -85,13 +85,14 @@
 
 .panel-price-input {
   display: block;
+  font-family: 'Roboto Slab';
+  line-height: 16px;
   width: 100%;
-  border: 1px solid #ccd1d9;
   padding: 10px 5px;
   margin: 0 0 5px;
-  color: #434a54;
-  line-height: 16px;
+  color: #646457;
   transition: all 0.1s ease;
+  border: 1px solid #ccd1d9;
   box-sizing: border-box;
   border-radius: 3px;
   box-shadow: 0 0 7px #e6e9ed inset;
@@ -109,6 +110,7 @@
   position: relative;
   font-weight: bold;
   font-size: 15px;
+  cursor: pointer;
 
   &::before {
     content: "";
@@ -167,7 +169,7 @@
   font-weight: 400;
   font-size: 14px;
   line-height: 18px;
-  color: #434a54;
+  color: #646457;
   margin: 0;
   cursor: pointer;
 }
