@@ -3,15 +3,241 @@
   margin: 4px 8px 14px 8px;
 }
 .slider .noUi-connect {
-  background: #48CFAD;
+  background: #48cfad;
 }
 .slider .noUi-handle {
   height: 18px;
   width: 18px;
   top: -5px;
-  right: -9px; /* half the width */
+  right: -9px;
   border-radius: 9px;
 }
-.slider .noUi-handle:before, .slider .noUi-handle:after {
+.slider .noUi-handle:before,
+.slider .noUi-handle:after {
   display: none;
+}
+
+.catalog-filter-block {
+  margin-bottom: 10px;
+}
+
+.catalog-filter-btn {
+  display: flex;
+  justify-content: space-between;
+  flex-flow: row-reverse;
+  align-items: center;
+}
+
+.catalog-clear-all {
+  color: #48cfad !important;
+  text-decoration: unset;
+}
+
+.catalog-btn {
+  position: relative;
+  padding: 0;
+  border: none;
+  font: inherit;
+  color: inherit;
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  border-radius: 100%;
+  background-color: #656d78;
+
+  &--show {
+    background-color: #48cfad;
+  }
+}
+
+.tf-filter {
+  background-color: #e6e9ed;
+}
+
+.tf-filter-group {
+  border-bottom: 1px solid #fff;
+}
+
+.panel {
+  padding: 15px 20px;
+}
+
+.panel-head {
+  color: #464637 !important;
+  text-decoration: unset;
+}
+
+.panel-body {
+  margin-bottom: 10px;
+  margin-top: 15px;
+
+  &--age {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 7px;
+  }
+}
+
+.panel-body__item {
+  position: relative;
+  margin-bottom: 8px;
+}
+
+.panel-price-input {
+  display: block;
+  font-family: 'Roboto Slab';
+  line-height: 16px;
+  width: 100%;
+  padding: 10px 5px;
+  margin: 0 0 5px;
+  color: #646457;
+  transition: all 0.1s ease;
+  border: 1px solid #ccd1d9;
+  box-sizing: border-box;
+  border-radius: 3px;
+  box-shadow: 0 0 7px #e6e9ed inset;
+}
+
+.panel-price-inputs {
+  display: flex;
+}
+
+.panel-price-input__item:not(:last-child) {
+  margin-right: 10px;
+}
+
+.panel-title {
+  position: relative;
+  font-weight: bold;
+  font-size: 15px;
+  cursor: pointer;
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 12px;
+    height: 6px;
+    right: 0;
+    top: 9px;
+    background-image: url("../../legacy/img/design/arrow.svg");
+    background-repeat: no-repeat;
+  }
+}
+
+.show-all {
+  position: relative;
+  width: 120px;
+  margin: 10px 0 0;
+  padding: 0 15px;
+  background-color: #aab2bd;
+  color: #fff;
+  font-size: 13px;
+  line-height: 32px;
+  vertical-align: top;
+  cursor: pointer;
+  border-radius: 3px;
+  transition: all 0.1s ease;
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 14px;
+    height: 8px;
+    right: 7px;
+    top: 11px;
+    background-image: url("../../legacy/img/design/arrow-all.svg");
+    background-repeat: no-repeat;
+  }
+}
+
+.check-input {
+  display: none;
+}
+
+.panel-label {
+  padding: 0 0 0 28px;
+  font-size: 15px;
+  line-height: 20px;
+  color: #434a54;
+  cursor: pointer;
+}
+
+.check {
+  position: relative;
+  width: 100%;
+  font-family: 'Roboto Slab';
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  color: #646457;
+  margin: 0;
+  cursor: pointer;
+}
+
+.check-order {
+  padding-right: 50px;
+}
+
+.check-input {
+  position: absolute;
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+
+.check-box {
+  position: absolute;
+  height: 15px;
+  width: 15px;
+  margin-left: -30px;
+  border: 1px solid #aab2bd;
+  background-color: #fff;
+  cursor: pointer;
+}
+
+.check-input:checked + .check-box {
+  width: 17px;
+  height: 17px;
+  background-color: #48cfad;
+  background-image: url("../../legacy/img/design/checked.svg");
+  background-repeat: no-repeat;
+  border: none;
+}
+
+.check-input:focus + .check-box {
+  border: 1px solid #333333;
+}
+
+.check-input:checked:focus + .check-box {
+  border: 1px solid #a8a8a8;
+}
+
+.check-input:disabled + .check-box {
+  opacity: 0.5;
+}
+
+.check-confident {
+  font-size: 15px;
+  line-height: 129.7%;
+  color: #171717;
+  padding-right: 0;
+  padding-top: 0;
+}
+
+@media (min-width: 989px) {
+  .tf-filter__mobile {
+    display: none;
+  }
+
+  .catalog-filter__block-mobile {
+    display: none;
+  }
+
+  .catalog-btn {
+    display: none;
+  }
+
+  .catalog-filter-btn {
+    justify-content: start;
+  }
 }
