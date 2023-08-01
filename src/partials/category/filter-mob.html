@@ -4,12 +4,19 @@
     <button class="btn catalog-btn catalog-btn--show" type="button" data-label="Скрыть фильтр" data-toggle="collapse"
       data-target="#filter" aria-expanded="false" aria-controls="filter">
     </button>
-    <div class="catalog-clear">
-      <a class="catalog-clear-all tf-filter-reset hide" href="javascript:void(0);" data-tf-reset="all">Очистить все</a>
+    <div class="custom-select">
+      <select>
+        <option value="option1">По популярности</option>
+        <option value="option2">Сначала дорогие</option>
+        <option value="option3">Сначала недорогие</option>
+      </select>
     </div>
   </div>
 </div>
 <div class="tf-filter tf-filter__mobile main-container">
+  <div class="catalog-clear">
+    <a class="catalog-clear-all tf-filter-reset hide" href="javascript:void(0);" data-tf-reset="all">Очистить все</a>
+  </div>
   <div class="collapse catalog-collapse" id="filter2">
     <ol class="panel-group">
       <li class="panel panel-default tf-filter-group">
