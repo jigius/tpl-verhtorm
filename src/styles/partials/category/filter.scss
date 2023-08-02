@@ -2,9 +2,11 @@
   height: 10px;
   margin: 4px 8px 14px 8px;
 }
+
 .slider .noUi-connect {
   background: #48cfad;
 }
+
 .slider .noUi-handle {
   height: 18px;
   width: 18px;
@@ -12,6 +14,7 @@
   right: -9px;
   border-radius: 9px;
 }
+
 .slider .noUi-handle:before,
 .slider .noUi-handle:after {
   display: none;
@@ -230,7 +233,7 @@
   cursor: pointer;
 }
 
-.check-input:checked + .check-box {
+.check-input:checked+.check-box {
   width: 17px;
   height: 17px;
   background-color: #48cfad;
@@ -239,15 +242,15 @@
   border: none;
 }
 
-.check-input:focus + .check-box {
+.check-input:focus+.check-box {
   border: 1px solid #333333;
 }
 
-.check-input:checked:focus + .check-box {
+.check-input:checked:focus+.check-box {
   border: 1px solid #a8a8a8;
 }
 
-.check-input:disabled + .check-box {
+.check-input:disabled+.check-box {
   opacity: 0.5;
 }
 
@@ -269,26 +272,24 @@
 }
 
 .custom-select select {
-  width: 150px;
+  width: 170px;
   font-size: 12px !important;
   font-family: "Roboto Slab" !important;
   color: #646457;
-  appearance: none;
   background-color: transparent;
   border: 1px solid #ccd1d9;
   padding: 10px;
   font-size: 16px;
 }
 
-.custom-select::after {
-  content: "";
-  position: absolute;
-  top: 54%;
-  right: 5px;
-  transform: translateY(-50%);
-  width: 12px;
-  height: 6px;
-  background-image: url("../../legacy/img/design/arrow.svg");
+option:checked {
+  background-color: #48cfad !important;
+  color: #fff !important;
+  outline: none !important;
+}
+
+option::selection {
+  background: transparent !important;
 }
 
 .custom-select select:focus {
@@ -346,8 +347,7 @@
     cursor: pointer;
 
     &:hover {
-      background-color: #48cfad;
-      color: #fff;
+      border-color: #CCD1D9;
     }
   }
 
