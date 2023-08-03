@@ -4,13 +4,21 @@
     <button class="btn catalog-btn catalog-btn--show" type="button" data-label="Скрыть фильтр" data-toggle="collapse"
       data-target="#filter" aria-expanded="false" aria-controls="filter">
     </button>
-    <div class="custom-select">
-      <select>
-        <option value="option1">По популярности</option>
-        <option value="option2">Сначала дорогие</option>
-        <option value="option3">Сначала недорогие</option>
-      </select>
-    </div>
+    <form>
+      <div class="select" data-state="">
+        <div class="select__title" data-default="Option 0">По популярности</div>
+        <div class="select__content">
+          <input id="singleSelect0" class="select__input" type="radio" name="singleSelect" checked />
+          <label for="singleSelect0" class="select__label">По популярности</label>
+          <input id="singleSelect1" class="select__input" type="radio" name="singleSelect" />
+          <label for="singleSelect1" class="select__label">По популярности</label>
+          <input id="singleSelect2" class="select__input" type="radio" name="singleSelect" />
+          <label for="singleSelect2" class="select__label">Сначала дорогие</label>
+          <input id="singleSelect3" class="select__input" type="radio" name="singleSelect" />
+          <label for="singleSelect3" class="select__label">Сначала недорогие</label>
+        </div>
+      </div>
+    </form>
   </div>
 </div>
 <div class="tf-filter tf-filter__mobile main-container">
@@ -22,11 +30,7 @@
       <li class="panel panel-default tf-filter-group">
         <div class="panel-heading">
           <h4 class="panel-title">
-            <a class="panel-head" data-toggle="collapse" href="#tf-filter2-panel0" role="button" aria-expanded="true"
-              aria-controls="tf-filter2-panel0">
-              Цена, ₽
-              <span class="panel-arrow"></span>
-            </a>
+            <div class="panel-head">Цена, ₽</div>
           </h4>
         </div>
         <div class="panel-collapse collapse in" id="tf-filter2-panel0" aria-expanded="true" data-o-expanded="true">
@@ -52,11 +56,7 @@
       <li class="panel panel-default tf-filter-group">
         <div class="panel-heading">
           <h4 class="panel-title">
-            <a class="panel-head" data-toggle="collapse" href="#tf-filter2-panel1" role="button" aria-expanded="true"
-              aria-controls="tf-filter2-panel1">
-              Бренд
-              <span class="panel-arrow"></span>
-            </a>
+            <div class="panel-head">Бренд</div>
           </h4>
         </div>
         <div class="panel-collapse collapse in" id="tf-filter2-panel1" aria-expanded="true" data-o-expanded="true">
@@ -156,11 +156,7 @@
       <li class="panel panel-default tf-filter-group">
         <div class="panel-heading">
           <h4 class="panel-title">
-            <a class="panel-head collapsed" data-toggle="collapse" href="#tf-filter2-panel2" role="button"
-              aria-expanded="false" aria-controls="tf-filter2-panel2">
-              Возраст
-              <span class="panel-arrow"></span>
-            </a>
+            <div class="panel-head">Возвраст</div>
           </h4>
         </div>
         <div class="panel-collapse collapse" id="tf-filter2-panel2" aria-expanded="false" data-o-expanded="false">
