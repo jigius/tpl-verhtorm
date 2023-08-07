@@ -79,22 +79,22 @@ const tf_filter = function (setting = {}) {
           try {
             ret =
               $(that)
-                .find(".panel-collapse.collapse")
+                .find(".panel.tf-filter-group")
                 .map(function () {
                   let ret;
-                  const expanded = $(this).hasClass("in");
-                  if (expanded ^ !!$(this).data('o-expanded')) {
+                  const collapsed = $(this).hasClass("collapsed");
+                  if (collapsed ^ !!$(this).data('o-collapsed')) {
                     ret =
                       (function (el) {
                         const found = $(el).attr('id').toString().match(/\d+$/);
                         if (!found) {
                           throw new Error("environment is broken");
                         }
-                        const id = parseInt(found[0]);
+                        const id= parseInt(found[0]);
                         if (isNaN(id)) {
                           throw new Error("invalid value");
                         }
-                        return (expanded? 1: -1) * (id + 1);
+                        return (collapsed? -1: 1) * (id + 1);
                       }) (this);
                   }
                   return ret;
