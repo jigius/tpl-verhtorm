@@ -262,7 +262,7 @@
 }
 
 .check-input:focus + .check-box {
-  border: none;
+  border: 1px solid #1badcf;
 }
 
 .check-input:checked:focus + .check-box {
