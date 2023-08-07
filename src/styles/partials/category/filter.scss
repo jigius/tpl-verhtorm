@@ -307,7 +307,7 @@
     .select__label + .select__input + .select__label {
       font-family: "Roboto Slab", serif;
       font-size: 12px;
-      max-height: 40px;
+      /*max-height: 40px;*/
       border-top-width: 1px;
     }
   }
@@ -317,7 +317,7 @@
   font-size: 12px;
   display: flex;
   align-items: center;
-  padding: 8px 16px;
+  padding: 6px 16px;
   color: #858585ff;
   border-radius: 3px;
   border: solid 1px #1badcf;
@@ -344,8 +344,10 @@
 }
 
 .select__content {
+  font-family: "Roboto Slab", serif;
+  font-size: 12px;
   position: absolute;
-  top: 36px;
+  /*top: 36px;*/
   left: 0;
   /*display: flex;*/
   /*flex-direction: column;*/
@@ -374,7 +376,7 @@
 }
 
 .select__label {
-  height: 40px;
+  /*height: 40px;*/
   /*max-height: 0;*/
   /*transition: all 0.2s ease-out;*/
   cursor: pointer;
@@ -397,7 +399,7 @@
 
 .select__link {
   display: block;
-  padding: 10px 16px;
+  padding: 7px 16px;
   color: #646457 !important;
 
   &:hover {
