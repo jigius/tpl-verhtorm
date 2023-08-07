@@ -28,7 +28,6 @@
   display: flex;
   justify-content: space-between;
   flex-flow: row-reverse;
-  align-items: center;
 
   &--desc {
     display: none;
@@ -55,8 +54,8 @@
   border: none;
   font: inherit;
   color: inherit;
-  width: 40px;
-  height: 40px;
+  width: 32px;
+  height: 32px;
   cursor: pointer;
   border-radius: 100%;
   background-color: #1badcf;
@@ -66,8 +65,8 @@
   &::before {
     content: "";
     position: absolute;
-    width: 29px;
-    height: 29px;
+    width: 22px;
+    height: 22px;
     top: 5px;
     left: 5px;
     background-image: url("../../legacy/img/design/icon-filter.png");
@@ -98,7 +97,8 @@
     .panel-title::before {
       transform: rotate(0deg);
     }
-    .panel-body, .show-all {
+    .panel-body,
+    .show-all {
       display: none;
     }
   }
@@ -256,15 +256,17 @@
   background-color: #1badcf;
   background-image: url("../../legacy/img/design/checked.svg");
   background-repeat: no-repeat;
+  background-size: 20px 20px;
+  background-position: -1px -1px;
   border: none;
 }
 
 .check-input:focus + .check-box {
-  border: 1px solid #333333;
+  border: none;
 }
 
 .check-input:checked:focus + .check-box {
-  border: 1px solid #a8a8a8;
+  border: none;
 }
 
 .check-input:disabled + .check-box {
@@ -286,7 +288,7 @@
 .select {
   position: relative;
   width: 185px;
-  height: 40px;
+  height: 32px;
   margin: 0 0 10px 0;
   overflow-x: unset !important;
 
@@ -344,12 +346,12 @@
 .select__content {
   position: absolute;
   top: 36px;
-  left: 2px;
+  left: 0;
   /*display: flex;*/
   /*flex-direction: column;*/
-  width: calc(100% - 6px);
+  width: calc(100% - 2px);
   background-color: #ffffff;
-  border: 1px solid #c7ccd1;
+  border: 1px solid #1badcf;
   border-top: none;
   border-bottom-left-radius: 3px;
   border-bottom-right-radius: 3px;
@@ -372,12 +374,8 @@
 }
 
 .select__label {
-  display: flex;
-  align-items: center;
   height: 40px;
   /*max-height: 0;*/
-  padding: 0 16px;
-  color: #646457;
   /*transition: all 0.2s ease-out;*/
   cursor: pointer;
   overflow: hidden;
@@ -388,7 +386,28 @@
 
   &:hover {
     background-color: #1badcf;
-    color: #fff;
+    color: #fff !important;
+  }
+
+  &:focus {
+    background-color: #1badcf;
+    color: #fff !important;
+  }
+}
+
+.select__link {
+  display: block;
+  padding: 10px 16px;
+  color: #646457 !important;
+
+  &:hover {
+    text-decoration: none !important;
+    color: #fff !important;
+  }
+
+  &:focus {
+    text-decoration: none !important;
+    color: #fff !important;
   }
 }
 
