@@ -139,8 +139,8 @@
   display: block;
   line-height: 16px;
   width: 100%;
-  padding: 10px 5px;
-  margin: 0 0 5px;
+  padding: 7px 5px;
+  margin: 0;
   color: #646457;
   transition: all 0.1s ease;
   border: 1px solid #1badcf;
@@ -215,6 +215,9 @@
   line-height: 20px;
   color: #434a54;
   cursor: pointer;
+  &.panel-label__unavailable {
+    opacity: 0.5;
+  }
 }
 
 .check {
@@ -257,7 +260,7 @@
   background-image: url("../../legacy/img/design/checked.svg");
   background-repeat: no-repeat;
   background-size: 20px 20px;
-  background-position: -1px -1px;
+  background-position: -2px -2px;
   border: none;
 }
 
@@ -444,6 +447,7 @@
   }
 
   .sorting-desc {
+    font-family: "Roboto Slab", serif;
     display: flex;
     align-items: baseline;
   }
@@ -468,14 +472,24 @@
     box-sizing: border-box;
     cursor: pointer;
 
-    &:hover {
-      border-color: #ccd1d9;
+    &.active {
+      background-color: #1badcf;
+      border-color: #1badcf;
+      color: #ffffff !important;
+      cursor: default;
+      &:hover {
+        border-color: #1badcf;
+      }
     }
-  }
 
-  .sorting__item.active {
-    background-color: #1badcf;
-    color: #fff;
+    &:hover {
+      border-color: #1badcf;
+    }
+
+    a {
+      color: inherit !important;
+      text-decoration: none !important;
+    }
   }
 
   .search .btn {
